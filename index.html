@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+    <script charset="utf-8" src="main.js"></script>
+    <script charset="utf-8" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="my.css">
+</head>
+<body>
+<div id="start" class="block">
+    <div class="userplace">
+        <label for="username">Имя пользователя: </label>
+        <input type="text" id="username" />
+    </div>
+    <div class="userplace">
+        <label for="pass">Пароль: </label>
+        <input type="password" id="pass" />
+        <a href="#" onclick="hidePass('pass')">Показать</a>
+    </div>
+    <div class="buttonplace">
+        <input type="button" value="Проверить" id="ch"/>
+    </div>
+</div>
+<div id="error" class="block">
+    Ошибка такой пользователь не найден.
+</div>
+<div id="success" class="block">
+    Пользователь найден.
+</div>
+</body>
+</html>
